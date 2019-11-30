@@ -1,0 +1,46 @@
+//-
+	Main layout for the UaPay website project
+	Version: 1.0
+	Created: 30.11.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+include ../mixins/_mixins
+doctype html
+html(lang='uk')
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		//- Meta data mixin
+		block meta-data
+		//- Favicons
+		include ../includes/_favicons
+		//- Bootstrap
+		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+		//- CSS file with reboot styles
+		link(rel="stylesheet", href="css/main.min.css")
+		//- Block for additional style sheets
+		block extra-css
+	body
+		header.header
+			.container
+				h3 Header
+		#main
+			.container
+				block main-content
+		footer.footer
+			.container
+				p &copy; All rights reserved
+		//- jQuery
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+		//- Popper
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		//- Bootstrap
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+		//- Main Javascript / jQuery scripts
+		script(src="js/common.js")
+		//- Additional Javascript / jQuery scripts
+		block extra-js
