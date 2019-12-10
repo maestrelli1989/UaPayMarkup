@@ -9,6 +9,76 @@
 	*/
 
 .footer
-	/**
-		styles go here
-		*/
+	background-color: $corporate-black
+	padding: 0px 0px 24px
+	.container
+		.top-footer-block
+			border-bottom: 1px solid $corporate-white
+			padding: 100px 0px 0px
+		.bottom-footer-block
+			.pre-menu-block
+				align-items: center
+				padding: 45px 0px 0px
+				.pre-menu-col
+					.site-logo-link
+						display: block
+						line-height: 40px
+						height: 40px
+					.address
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						color: $corporate-red
+			.footer-menu
+				padding: 45px 0px 0px
+				.footer-menu-col
+					.footer-menu-title
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						text-transform: uppercase
+						color: $corporate-white
+						padding: 0px 0px 20px
+					.footer-menu-link
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						text-transform: uppercase
+						color: $corporate-gray
+						transition: $primary-transition
+						text-decoration: none
+						padding: 0px 0px 15px
+						display: block
+						&:hover
+							color: $corporate-white
+							text-decoration: none
+
+.copyright-block
+	background-color: $corporate-accent-black
+	padding: 20px 0px
+	.container
+		.copyright-block-content
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.flex-left
+				p
+					font-size: 14px
+					line-height: 20px
+					font-weight: $normal-weight
+					color: $corporate-dim-gray
+			.flex-right
+				a
+					font-size: 14px
+					line-height: 20px
+					font-weight: $normal-weight
+					color: $corporate-dim-gray
+					text-decoration: none
+					transition: $primary-transition
+					&:first-child,
+					&:nth-child(2)
+						padding-right: 20px
+					&:hover
+						text-decoration: none
+						color: $corporate-white

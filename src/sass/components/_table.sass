@@ -8,68 +8,36 @@
 	*/
 
 .table-responsive
-	& + h4
-		padding-top: 25px
-	& + p
-		padding-top: 20px
+	padding: 15px 0px
 	table
 		width: 100%
-		text-align: center
+		text-align: left
+		caption
+			caption-side: bottom
+			color: $corporate-dark-gray
+			font-size: 12px
+			line-height: 20px
+			font-style: italic
+			padding: 10px 0px 0px
 		thead
 			background-color: $corporate-gainsboro
 			tr
 				th
-					color: $corporate-gray
-					font-family: $secondary-regular
-					font-size: 14px
-					line-height: 24px
-					padding: 20px 15px
-					border: 1px solid $corporate-ghost-white
+					color: $corporate-accent-black
+					font-size: 12px
+					line-height: 20px
+					padding: 15px
+					border: 1px solid $corporate-white
 					font-weight: $regular-weight
-					sup
-						font-size: 9px
-						line-height: 24px
-						font-family: $secondary-bold
-						padding-left: 2px
-					h6
-						padding: 5px 0px
-					p
-						color: $corporate-gray
-						font-family: $secondary-regular
-						font-size: 14px
-						line-height: 24px
-						font-weight: $regular-weight
-						padding-bottom: 5px
 		tbody
 			background-color: $corporate-white
 			tr
 				&:nth-of-type(even)
 					background-color: $corporate-ghost-white
 				td
-					color: $corporate-violet
-					font-family: $secondary-regular
-					font-size: 14px
-					line-height: 24px
-					padding: 20px 15px
+					color: $corporate-accent-black
+					font-size: 12px
+					line-height: 20px
+					padding: 15px
 					border: 1px solid $corporate-gainsboro
-					sup
-						font-size: 9px
-						line-height: 24px
-						font-family: $secondary-bold
-						padding-left: 2px
-					p
-						padding-bottom: 5px
-						font-size: 14px
-						line-height: 24px
-						&:last-child
-							padding-bottom: 0px
-					ul
-						li
-							font-size: 14px
-							line-height: 24px
-							padding-bottom: 5px
-							text-align: left
-					a
-						@extend %default-link
-						font-size: 14px
-						line-height: 24px
+					font-weight: $regular-weight

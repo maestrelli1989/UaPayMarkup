@@ -18,6 +18,7 @@ html(lang='uk')
 		block meta-data
 		//- Favicons
 		include ../includes/_favicons
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap")
 		//- Bootstrap
 		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
 		//- CSS file with reboot styles
@@ -27,13 +28,50 @@ html(lang='uk')
 	body
 		header.header
 			.container
-				h3 Header
+				a(href="javascript:void(0);", class="site-logo-link")
+					img(src="./images/logo/site-logo.png", alt="Logo")
 		#main
-			.container
-				block main-content
+			block main-content
 		footer.footer
 			.container
-				p &copy; All rights reserved
+				.top-footer-block
+				.bottom-footer-block
+					.row.pre-menu-block
+						.col-xl-3.pre-menu-col
+							a(href="javascript:void(0);", class="site-logo-link")
+								img(src="./images/logo/site-logo.png", alt="Logo")
+						.col-xl-6.pre-menu-col
+							p.address 04205, Ukraine, Kyiv, 35 Obolonskiy Ave.
+					.row.footer-menu
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Бизнесу
+							a(href="javascript:void(0);", class="footer-menu-link") UaPay Checkout
+							a(href="javascript:void(0);", class="footer-menu-link") Массовые платежи
+							a(href="javascript:void(0);", class="footer-menu-link") Отраслевые решения
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Пользователю
+							a(href="javascript:void(0);", class="footer-menu-link") Штрафы
+							a(href="javascript:void(0);", class="footer-menu-link") Безопасная сделка
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Разработчикам
+							a(href="javascript:void(0);", class="footer-menu-link") API
+							a(href="javascript:void(0);", class="footer-menu-link") Модули CMS
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Компания
+							a(href="javascript:void(0);", class="footer-menu-link") О нас
+							a(href="javascript:void(0);", class="footer-menu-link") Блог
+							a(href="javascript:void(0);", class="footer-menu-link") FAQ
+							a(href="javascript:void(0);", class="footer-menu-link") Партнерство
+							a(href="javascript:void(0);", class="footer-menu-link") Правовая информация
+		footer.copyright-block
+			.container
+				.copyright-block-content
+					.flex-left
+						p &copy; Copyright 2020, UAPAY
+					.flex-right
+						a(href="") Terms of Use
+						a(href="") Cookies Policy
+						a(href="") Privacy Policy
 		//- jQuery
 		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 		//- Popper
