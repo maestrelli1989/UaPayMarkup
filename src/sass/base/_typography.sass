@@ -10,6 +10,7 @@
 
 h1
 	color: $corporate-accent-black
+	font-family: $primary-black
 	font-weight: $black-weight
 	font-size: 64px
 	line-height: 72px
@@ -17,6 +18,7 @@ h1
 
 h2
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
 	font-size: 44px
 	line-height: 56px
@@ -24,6 +26,7 @@ h2
 
 h3
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
 	font-size: 34px
 	line-height: 44px
@@ -31,6 +34,7 @@ h3
 
 h4
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
 	font-size: 32px
 	line-height: 40px
@@ -38,6 +42,7 @@ h4
 
 h5
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
 	font-size: 24px
 	line-height: 36px
@@ -45,6 +50,7 @@ h5
 
 h6
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
 	font-size: 18px
 	line-height: 32px
@@ -52,6 +58,7 @@ h6
 
 p
 	color: $corporate-dark-gray
+	font-family: $primary-regular
 	font-size: 16px
 	line-height: 24px
 	padding: 0px 0px 10px
@@ -60,13 +67,27 @@ p
 
 b, strong
 	color: $corporate-accent-black
+	font-family: $primary-bold
 	font-weight: $bold-weight
-	font-size: 1.05em
 
-i, em
+i, em, q, var
 	&:not(.fas, .fab)
+		font-family: $primary-regular-italic
 		font-style: italic
 		color: $corporate-dark-gray
+
+del, ins
+	text-decoration-color: $corporate-dim-gray
+
+abbr[title], dfn[title]
+	font-family: $primary-regular-italic
+
+q
+	quotes: "«" "»"
+	&:before
+		content: open-quote
+	&:after
+		content: close-quote
 
 hr
 	height: 1px
@@ -74,9 +95,13 @@ hr
 	border-radius: $quaternary-radius
 	background-color: $corporate-gainsboro
 
-sup
-	font-size: 9px
-	line-height: 24px
+small
+	font-size: 0.8em
+
+sup, sub
+	font-size: 0.65em
+	font-family: $primary-medium
+	font-weight: $medium-weight
 	padding-left: 2px
 
 .inner-page-wrapper
@@ -85,6 +110,8 @@ sup
 		> li
 			position: relative
 			font-size: 16px
+			font-family: $primary-regular
+			font-weight: $regular-weight
 			line-height: 30px
 			color: $corporate-dark-gray
 			padding-bottom: 10px
@@ -120,6 +147,8 @@ sup
 			color: $corporate-dark-gray
 			font-size: 16px
 			line-height: 28px
+			font-family: $primary-regular
+			font-weight: $regular-weight
 			padding-left: 35px
 			padding-bottom: 10px
 			position: relative
@@ -146,26 +175,30 @@ sup
 						margin-top: 10px
 	dl
 		dt
-			color: $corporate-orange
-			font-size: 18px
-			font-weight: $bold-weight
-			line-height: 24px
+			color: $corporate-black
+			font-size: 16px
+			font-family: $primary-medium
+			font-weight: $medium-weight
+			line-height: 28px
 			padding-bottom: 10px
-			padding-left: 30px
+			padding-left: 35px
 			position: relative
 			&:before
 				position: absolute
 				content: ''
 				direction: block
-				background-color: $corporate-orange
-				width: 10px
-				height: 10px
-				border-radius: $tertiary-radius
-				top: 7px
+				background-color: $corporate-red
+				width: 8px
+				height: 8px
+				border-radius: $quaternary-radius
+				transform: rotate(45deg)
+				top: 10px
 				left: 0px
 		dd
-			padding-left: 30px
-			color: $corporate-violet
+			padding-left: 35px
+			color: $corporate-dark-gray
+			font-family: $primary-regular
+			font-weight: $regular-weight
 			font-size: 16px
-			line-height: 30px
+			line-height: 28px
 			padding-bottom: 10px
