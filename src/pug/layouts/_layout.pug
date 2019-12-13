@@ -27,10 +27,7 @@ html(lang='uk')
 		//- Block for additional style sheets
 		block extra-css
 	body
-		header.header
-			.container
-				a(href="javascript:void(0);", class="site-logo-link")
-					img(src="./images/logo/site-logo.png", alt="Logo")
+		block header
 		#main
 			block main-content
 		div
@@ -38,8 +35,7 @@ html(lang='uk')
 				.container
 					.top-footer-block
 						h2 Автоматизируйте ваши платежи уже сегодня
-						p Начать сейчас
-							i.fas.fa-chevron-circle-right
+						include ../includes/components/_start-now-btn.pug
 					.bottom-footer-block
 						.row.pre-menu-block
 							.col-xl-3.pre-menu-col

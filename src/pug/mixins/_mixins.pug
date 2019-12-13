@@ -13,3 +13,9 @@ mixin meta-data(title, description, href)
 	title=title
 	meta(name="description" content=description)
 	link(rel="canonical" href=href)
+
+mixin header(className)
+	header.header(class=className)
+		.container
+			a(href="javascript:void(0);", class="site-logo-link")
+				img(src="./images/logo/site-logo.png", alt="Logo")

@@ -130,3 +130,34 @@
 		background-color: $corporate-gainsboro
 		color: $corporate-gray
 		pointer-events: none
+
+.btn-start-now
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: flex-start
+	line-height: 40px
+	padding: 0px 0px 80px
+	width: 100%
+	max-width: 215px
+	p
+		color: $corporate-red
+		font-family: $primary-bold
+		font-size: 20px
+		font-weight: $bold-weight
+		line-height: 20px
+		transition: $primary-transition
+		padding: 0px 20px 0px 0px
+	svg
+		#rounded-1
+			transition: $tertiary-transition
+		#rounded-2
+			transition: $secondary-transition
+	&:hover
+		p
+			color: $corporate-accent-red
+		svg
+			#rounded-1
+				stroke: $corporate-accent-red
+			#rounded-2
+				fill: $corporate-accent-red
