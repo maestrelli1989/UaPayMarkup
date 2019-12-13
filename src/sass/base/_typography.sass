@@ -57,7 +57,7 @@ h6
 	padding: 10px 0px
 
 p
-	color: $corporate-dark-gray
+	color: $corporate-accent-black
 	font-family: $primary-regular
 	font-size: 16px
 	line-height: 24px
@@ -74,7 +74,7 @@ i, em, q, var
 	&:not(.fas, .fab)
 		font-family: $primary-regular-italic
 		font-style: italic
-		color: $corporate-dark-gray
+		color: $corporate-accent-black
 
 del, ins
 	text-decoration-color: $corporate-dim-gray
@@ -93,7 +93,7 @@ hr
 	height: 1px
 	width: 100%
 	border-radius: $quaternary-radius
-	background-color: $corporate-gainsboro
+	background-color: $corporate-ghost-white
 
 small
 	font-size: 0.8em
@@ -113,7 +113,7 @@ code
 	color: $corporate-red	
 
 kbd
-	background-color: $corporate-black
+	background-color: $corporate-accent-black
 	border-radius: $secondary-radius
 	color: $corporate-white
 	padding: 0px 5px
@@ -122,6 +122,31 @@ samp
 	color: $corporate-dark-gray	
 
 .inner-page-wrapper
+	a
+		font-size: 16px
+		font-family: $primary-regular
+		font-weight: $regular-weight
+		line-height: 28px
+		color: $corporate-dark-gray
+		transition: $primary-transition
+		position: relative
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			width: 100%
+			height: 1px
+			top: 17px
+			left: 0px
+			background-color: $corporate-red
+		&:active,
+		&:focus
+			outline: none
+			text-decoration: none
+		&:hover
+			color: $corporate-red
+			text-decoration: none
+			cursor: pointer
 	ul
 		padding-bottom: 10px
 		> li
@@ -154,9 +179,6 @@ samp
 				top: 10px
 				border-radius: $quaternary-radius
 				transform: rotate(45deg)
-			&:hover
-				a
-					color: $corporate-violet
 	ol
 		padding-bottom: 10px
 		> li

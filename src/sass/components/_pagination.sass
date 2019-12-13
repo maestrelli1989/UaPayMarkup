@@ -11,7 +11,8 @@
 .pagination
 	justify-content: center
 	align-items: center
-	margin-top: 20px
+	margin: 20px 0px 0px!important
+	padding: 0px!important
 	.page-item
 		padding: 0px
 		position: static
@@ -26,29 +27,34 @@
 			box-shadow: none
 		.page-link
 			transition: $primary-transition
-			color: $corporate-gray
+			color: $corporate-accent-black
+			font-family: $primary-medium
 			font-weight: $medium-weight
 			font-size: 14px
+			line-height: 14px
 			background: none
 			background-color: transparent
 			border: none
 			display: block
 			position: static
-			&:before
+			padding: 10px 12.5px
+			&:before, &:after
 				display: none
 			&:focus
 				outline: none
 				box-shadow: none
 			&:hover
-				color: $corporate-violet
+				color: $corporate-red
 		&.active
 			.page-link
-				color: $corporate-violet
+				color: $corporate-accent-black
 				font-weight: $medium-weight
 				font-size: 14px
+				line-height: 14px
 				background: none
 				background-color: $corporate-gainsboro
 				border: none
 				border-radius: $tertiary-radius
 				display: block
 				position: static
+				padding: 10px 12.5px
