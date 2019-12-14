@@ -30,51 +30,53 @@ html(lang='uk')
 		block header
 		#main
 			block main-content
-		div
-			footer.footer
-				.container
-					.top-footer-block
+		footer.footer
+			.container
+				.top-footer-block
+					.flex-left
 						h2 Автоматизуйте ваші платежі вже сьогодні
 						include ../includes/components/_start-now-btn.pug
-					.bottom-footer-block
-						.row.pre-menu-block
-							.col-xl-3.pre-menu-col
-								a(href="/", class="site-logo-link")
-									img(src="./images/logo/site-logo.png", alt="Logo")
-							.col-xl-6.pre-menu-col
-								p.address 04205, Оболонський проспект, 35, Київ, Україна
-						.row.footer-menu
-							.col-xl-3.footer-menu-col
-								p.footer-menu-title Бізнесу
-								a(href="uapay-checkout.html", class="footer-menu-link") UaPay Checkout
-								a(href="mass-payouts.html", class="footer-menu-link") Масові платежі
-								a(href="industry-solutions.html", class="footer-menu-link") Галузеві рішення
-							.col-xl-3.footer-menu-col
-								p.footer-menu-title Користувачу
-								a(href="javascript:void(0);", class="footer-menu-link") Штрафи UAPAY
-								a(href="javascript:void(0);", class="footer-menu-link") Оплата послуг
-								a(href="javascript:void(0);", class="footer-menu-link") Грошові перекази
-								a(href="javascript:void(0);", class="footer-menu-link") Безпечна угода
-							.col-xl-3.footer-menu-col
-								p.footer-menu-title Розробникам
-								a(href="javascript:void(0);", class="footer-menu-link") API
-								a(href="javascript:void(0);", class="footer-menu-link") Модулі CMS
-							.col-xl-3.footer-menu-col
-								p.footer-menu-title Компанія
-								a(href="about-us.html", class="footer-menu-link") Про нас
-								a(href="news.html", class="footer-menu-link") Новини
-								a(href="javascript:void(0);", class="footer-menu-link") FAQ
-								a(href="javascript:void(0);", class="footer-menu-link") Партнерство
-								a(href="legal-info.html", class="footer-menu-link") Правова інформація
-			footer.copyright-block
-				.container
-					.copyright-block-content
-						.flex-left
-							p &copy; Copyright 2020, UAPAY
-						.flex-right
-							a(href="terms-of-use.html") Умови надання сервісу
-							a(href="cookies-policy.html") Політика роботи з cookies
-							a(href="privacy-policy.html") Робота з персональними даними
+					.flex-right
+						img(src="./images/footer/svg/1.svg", alt="Image")
+				.bottom-footer-block
+					.row.pre-menu-block
+						.col-xl-3.pre-menu-col
+							a(href="/", class="site-logo-link")
+								img(src="./images/logo/site-logo.png", alt="Logo")
+						.col-xl-6.pre-menu-col
+							p.address 04205, Оболонський проспект, 35, Київ, Україна
+					.row.footer-menu
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Бізнесу
+							a(href="uapay-checkout.html", class="footer-menu-link") UaPay Checkout
+							a(href="mass-payouts.html", class="footer-menu-link") Масові платежі
+							a(href="industry-solutions.html", class="footer-menu-link") Галузеві рішення
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Користувачу
+							a(href="javascript:void(0);", class="footer-menu-link") Штрафи UAPAY
+							a(href="javascript:void(0);", class="footer-menu-link") Оплата послуг
+							a(href="javascript:void(0);", class="footer-menu-link") Грошові перекази
+							a(href="javascript:void(0);", class="footer-menu-link") Безпечна угода
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Розробникам
+							a(href="javascript:void(0);", class="footer-menu-link") API
+							a(href="javascript:void(0);", class="footer-menu-link") Модулі CMS
+						.col-xl-3.footer-menu-col
+							p.footer-menu-title Компанія
+							a(href="about-us.html", class="footer-menu-link") Про нас
+							a(href="news.html", class="footer-menu-link") Новини
+							a(href="javascript:void(0);", class="footer-menu-link") FAQ
+							a(href="javascript:void(0);", class="footer-menu-link") Партнерство
+							a(href="legal-info.html", class="footer-menu-link") Правова інформація
+		footer.copyright-block
+			.container
+				.copyright-block-content
+					.flex-left
+						p &copy; Copyright 2020, UAPAY
+					.flex-right
+						a(href="terms-of-use.html") Умови надання сервісу
+						a(href="cookies-policy.html") Політика роботи з cookies
+						a(href="privacy-policy.html") Робота з персональними даними
 		//- jQuery
 		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 		//- Popper

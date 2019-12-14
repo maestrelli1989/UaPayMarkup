@@ -131,7 +131,7 @@
 		color: $corporate-gray
 		pointer-events: none
 
-.btn-start-now
+.action-btn
 	display: flex
 	flex-direction: row
 	align-items: center
@@ -139,7 +139,8 @@
 	line-height: 40px
 	padding: 0px 0px 80px
 	width: 100%
-	max-width: 215px
+	max-width: auto
+	position: static!important
 	p
 		color: $corporate-red
 		font-family: $primary-bold
@@ -161,3 +162,5 @@
 				stroke: $corporate-accent-red
 			#rounded-2
 				fill: $corporate-accent-red
+	&:after
+		display: none!important
