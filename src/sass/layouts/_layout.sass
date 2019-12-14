@@ -34,23 +34,41 @@
 
 
 .legal-page-wrapper
-	.legal-page-intro
-		background-color: $corporate-black
-		padding: 40px 0px 80px
-		.container
-			max-width: 1000px
-			padding: 0px
-			p
-				color: $corporate-white
-				font-weight: bold
-				font-size: 36px
-				line-height: 48px
-				text-align: center
 	.legal-page-content
 		padding: 80px 0px 120px
 		.container
 			max-width: 1000px
-			padding: 0px	
+			padding: 0px
+			.special-link
+				width: 100%
+				border-radius: 10px
+				background-color: #343333
+				padding: 40px
+				margin: 0px auto 20px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				&:last-of-type
+					margin: 0px auto
+				&:after
+					display: none
+				span
+					color: $corporate-white
+					font-size: 24px
+					line-height: 36px
+					font-family: $primary-bold
+					font-weight: $bold-weight
+					transition: $primary-transition
+				svg
+					#arrow-right
+						transition: $primary-transition
+				&:hover
+					span
+						opacity: 0.8
+					svg
+						#arrow-right
+							opacity: 0.8
 			.content-line
 				display: flex
 				flex-direction: row
@@ -65,17 +83,11 @@
 				.flex-right
 					width: 100%
 					max-width: 620px
+		&.black-page-content
+			background-color: $corporate-black
+			padding: 0px 0px 60px
 
 .news-page-wrapper
-	.news-page-intro
-		background-color: $corporate-red
-		padding: 0px 0px 40px
-		.container
-			max-width: 1000px
-			padding: 0px
-			h1
-				color: $corporate-white
-				text-align: center
 	.news-page-content
 		padding: 80px 0px 120px
 		.container
