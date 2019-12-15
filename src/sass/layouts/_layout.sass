@@ -285,12 +285,41 @@
 							img
 								display: block
 								margin: 0px auto
+				.preferences-block
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: flex-start
+					flex-wrap: wrap
+					padding: 40px 0px 0px
+					.preference-col
+						margin-bottom: 40px
+						width: 100%
+						max-width: 480px
+						.preference-item
+							background-color: $corporate-white
+							border-radius: $quinary-radius
+							padding: 40px
+							p
+								padding: 0px
+						.other
+							padding: 40px 0px 0px
 		.second-block
 			background-color: $corporate-red
-			padding: 80px 0px 120px
+			padding: 100px 0px 120px
 			.container
 				max-width: 1000px
 				padding: 0px
+				h4
+					text-align: center
+					color: $corporate-white
+					text-transform: uppercase
+				ul
+					padding: 20px 0px 0px
+					li
+						color: $corporate-white
+						&:before
+							background-color: $corporate-white
 		.third-block
 			background-color: $corporate-gainsboro
 			padding: 105px 0px 110px
