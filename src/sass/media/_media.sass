@@ -6,4 +6,35 @@
 	Modified by: Serhii Tiutin
 	Owner: UaPay
 	Website: https://uapay.ua/
-	*/	
+	*/
+
+@media screen and (max-width: 992px)
+	.copyright-block
+		.container
+			.copyright-block-content
+				flex-direction: column
+				.flex-left
+					order: 2
+					p
+						line-height: 40px
+				.flex-right
+					order: 1
+					a
+						line-height: 40px
+
+@media screen and (max-width: 767px)
+	.copyright-block
+		.container
+			.copyright-block-content
+				justify-content: center
+				.flex-left
+					p
+						line-height: 37px
+				.flex-right
+					a
+						display: block
+						text-align: center
+						line-height: 37px
+						&:first-child,
+						&:nth-child(2)
+							padding: 0px
