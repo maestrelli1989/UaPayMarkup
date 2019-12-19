@@ -8,7 +8,33 @@
 	Website: https://uapay.ua/
 	*/
 
+@media screen and (max-width: 1200px)
+	
+	.news-page
+		.news-page-content
+			.container
+				max-width: 960px
+				padding: 0px 15px
+				.news-list
+					margin-right: 0px
+					margin-left: 0px
+					.news-item
+						max-width: 270px
+
 @media screen and (max-width: 992px)
+
+	.header
+		height: 72px
+
+	.news-page
+		.news-page-content
+			padding: 60px 0px 80px
+			.container
+				max-width: 720px
+				.news-list
+					.news-item
+						max-width: 300px
+
 	.copyright-block
 		.container
 			.copyright-block-content
@@ -23,6 +49,46 @@
 						line-height: 40px
 
 @media screen and (max-width: 767px)
+	
+	h1
+		font-size: 32px
+		line-height: 42px
+
+	h2
+		font-size: 28px
+		line-height: 36px
+
+	p
+		line-height: 24px
+
+	.action-btn
+		padding-bottom: 60px
+
+	.inner-page-wrapper
+		.red-intro-block
+			padding-bottom: 0px
+
+	.news-page
+		.news-page-content
+			padding: 40px 0px 60px
+			.container
+				max-width: 540px
+				.news-list
+					.news-item
+						max-width: 100%
+						margin-bottom: 40px
+						padding-left: 10px
+						padding-right: 10px
+						margin-left: 0px
+						margin-right: 0px
+						.news-description
+							max-height: 115px
+
+	.footer
+		.container
+			.top-footer-block
+				padding-top: 0px
+
 	.copyright-block
 		.container
 			.copyright-block-content
@@ -38,3 +104,27 @@
 						&:first-child,
 						&:nth-child(2)
 							padding: 0px
+
+	@media screen and (max-width: 576px)
+		
+		.header
+			height: 60px
+
+		.news-page
+			.news-page-content
+				.container
+					.news-list
+						.news-item
+							padding-left: 0px
+							padding-right: 0px
+							margin-bottom: 30px
+							.news-description
+								padding-top: 10px
+								max-height: 105px
+
+		.footer
+			.container
+				.top-footer-block
+					.flex-left
+						h2
+							padding-bottom: 20px
