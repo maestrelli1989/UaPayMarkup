@@ -17,5 +17,43 @@ mixin meta-data(title, description, href)
 mixin header(className)
 	header.header(class=className)
 		.container
-			a(href="/", class="site-logo-link")
-				img(src="./images/logo/site-logo.png", alt="Logo")
+			.header-flex
+				.header-flex-left
+					a(href="/", class="site-logo-link")
+						img(src="./images/logo/site-logo.png", alt="Logo")
+					.menu
+						.menu-item
+							.menu-trigger#business-trigger Бізнесу
+							.sub-menu-wrapper#business-sub-menu
+								.triangle
+								.sub-menu.business-sub-menu
+									a(href="uapay-checkout.html") UaPay Checkout
+									a(href="mass-payouts.html") Масові платежі
+									a(href="industry-solutions.html") Галузеві рішення
+						.menu-item
+							.menu-trigger#user-trigger Користувачу
+							.sub-menu-wrapper#user-sub-menu
+								.triangle
+								.sub-menu.user-sub-menu
+									a(href="javascript:void(0);") Штрафи UAPAY
+									a(href="javascript:void(0);") Оплата послуг
+									a(href="javascript:void(0);") Грошові перекази
+									a(href="javascript:void(0);") Безпечна угода
+						.menu-item
+							.menu-trigger#company-trigger Про компанію
+							.sub-menu-wrapper#company-sub-menu
+								.triangle
+								.sub-menu.company-sub-menu
+									a(href="about-us.html") Про нас
+									a(href="news.html") Новини
+									a(href="javascript:void(0);") FAQ
+									a(href="javascript:void(0);") Партнерство
+									a(href="legal-info.html") Правова інформація
+						.menu-item
+							.menu-trigger#developers-trigger Розробникам
+							.sub-menu-wrapper#developers-sub-menu
+								.triangle
+								.sub-menu.developers-sub-menu
+									a(href="javascript:void(0);") API
+									a(href="javascript:void(0);") Модулі CMS
+				.header-flex-right
