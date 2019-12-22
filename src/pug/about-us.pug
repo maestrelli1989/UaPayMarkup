@@ -23,10 +23,10 @@ block main-content
 	.inner-page-wrapper.about-us-page
 		.intro-block.red-intro-block
 			.container
-				h1 Про компанию
+				h1 Про нас
 		.about-us-content
 			.first-block
-				.container
+				.container.main-container
 					.flex-block
 						.flex-left
 							p
@@ -36,41 +36,41 @@ block main-content
 						.flex-right
 							img(src="./images/svg/uapay.svg", alt="Image", style="width: 340px")
 			.second-block
-				.container
+				.container.main-container
 					.flex-block
 						.flex-item
 							figure
 								img(src="./images/about-us/pci-dss.png", alt="Image")
 							p.title PCI DSS Level 1
-							p.desc 100% соответствие стандартам безопасности платежей
+							p.desc 100% відповідність стандартам безпеки платежів
 						.flex-item
 							figure
 								img(src="./images/about-us/gdpr.png", alt="Image")
 							p.title GDPR Compliant
-							p.desc Работа с персональными данными четко регламентирована
+							p.desc Робота з персональними даними чітко регламентована
 						.flex-item
 							figure
 								img(src="./images/about-us/ukraine.png", alt="Image")
 							p.title ВПС
-							p.desc Статус внутригосударственной платежной системы
+							p.desc Статус внутрішньодержавної платіжної системи
 						.flex-item
 							figure
 								img(src="./images/about-us/paperless.png", alt="Image")
 							p.title Paperless
-							p.desc Максимальная поддержка электронного документооборота
+							p.desc Максимальна підтримка електронного документообігу
 						.flex-item
 							figure
 								img(src="./images/about-us/structure.png", alt="Image")
-							p.title ОПИ
-							p.desc Лицензия оператора платежной инфраструктуры
+							p.title ОПІ
+							p.desc Ліцензія оператора платіжної інфраструктури
 						.flex-item
 							figure
 								img(src="./images/about-us/licence.png", alt="Image")
-							p.title Лицензия НБУ
-							p.desc Перевод средств в национальной валюте, без открытия счетов
+							p.title Ліцензія НБУ
+							p.desc Переказ коштів у національній валюті, без без відкриття рахунків
 			.third-block
-				.container
-					h5 Нам доверяют
+				.container.main-container
+					h4 Нам довіряють
 					.flex-block
 						.flex-item
 							include includes/svg/about-us/_1.pug
@@ -101,15 +101,15 @@ block main-content
 						.flex-item
 							include includes/svg/about-us/_11.pug
 			.fourth-block
-				.container
+				.container.main-container
 					.flex-block
 						.flex-left
 							img(src="./images/svg/percent.svg", alt="Image")
 						.flex-right
 							h4 Партнерам
-							p Мы всегда открыты к новым сотрудничествам и предоставлению качественного сервиса широкому спектру клиентов. Поэтому, для всех кто связан с онлайн бизнесом, наша программа партнерская программа даёт возможность зарабатывать на рекомендациях и подключенных клиентах.
+							p Ми завжди відкриті до співпраці з новими партнерами і до надання якісного сервісу широкому спектру клієнтів. Тому для всіх, хто пов'язаний з онлайн-бізнесом, наша партнерська програма дає можливість заробляти на рекомендаціях і підключених клієнтах.
 							include includes/components/_partnership-btn.pug
-					h5 О нас пишут
+					h5 Про нас пишуть
 					.media-block
 						a.media-item(href="javascript:void(0);", target="_blank")
 							img(src="./images/about-us/media/ain.png", alt="Logo")

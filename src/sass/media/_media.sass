@@ -30,13 +30,6 @@
 					.news-item
 						max-width: 270px
 
-	.about-us-page
-		.about-us-content
-			.first-block
-				.container
-					max-width: 960px
-					padding: 0px 15px
-
 @media screen and (max-width: 992px)
 
 	h1
@@ -71,8 +64,6 @@
 		.about-us-content
 			.first-block
 				padding: 60px 0px 80px
-				.container
-					max-width: 720px
 
 	.news-page
 		.news-page-content
@@ -104,6 +95,14 @@
 	h2
 		font-size: 28px
 		line-height: 36px
+
+	h4
+		font-size: 24px
+		line-height: 32px
+
+	h5
+		font-size: 20px
+		line-height: 32px
 
 	h6
 		font-size: 16px
@@ -177,8 +176,29 @@
 		.about-us-content
 			.first-block
 				padding: 40px 0px 60px
-				.container
-					max-width: 540px
+				.main-container
+					.flex-block
+						flex-direction: column
+			.second-block
+				padding: 60px 0px
+				.main-container
+					.flex-block
+						justify-content: center
+						.flex-item
+							padding-bottom: 40px
+							&:last-child
+								padding-bottom: 0px
+			.third-block
+				padding: 40px 0px 20px
+			.fourth-block
+				padding: 40px 0px 60px
+				.main-container
+					.flex-block
+						flex-direction: column
+						.flex-left
+							order: 2
+						.flex-right
+							order: 1
 					
 	.news-page
 		.news-page-content
@@ -207,15 +227,6 @@
 						padding-right: 15px
 			&.black-page-content
 				padding-bottom: 0px
-
-@media screen and (max-width: 700px)
-		
-	.about-us-page
-		.about-us-content
-			.first-block
-				.container
-					.flex-block
-						flex-direction: column
 
 @media screen and (max-width: 576px)
 	
