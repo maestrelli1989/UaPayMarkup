@@ -1,4 +1,4 @@
-var	gulp = require('gulp'),
+let	gulp = require('gulp'),
 browserSync = require('browser-sync'),
 pug = require('gulp-pug'),
 notify = require("gulp-notify"),

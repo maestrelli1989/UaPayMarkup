@@ -10,6 +10,10 @@
 
 @media screen and (max-width: 1200px)
 	
+	.main-container
+		max-width: 960px
+		padding: 0px 15px
+
 	.inner-page-wrapper
 		.intro-block
 			.container
@@ -19,9 +23,7 @@
 
 	.news-page
 		.news-page-content
-			.container
-				max-width: 960px
-				padding: 0px 15px
+			.main-container
 				.news-list
 					margin-right: 0px
 					margin-left: 0px
@@ -35,13 +37,14 @@
 					max-width: 960px
 					padding: 0px 15px
 
-	.legal-page-wrapper
-		.legal-page-content
-			.container
-				max-width: 960px
-				padding: 0px 15px
-
 @media screen and (max-width: 992px)
+
+	h1
+		font-size: 42px
+		line-height: 54px
+
+	.main-container
+		max-width: 720px
 
 	.header
 		height: 72px
@@ -50,32 +53,6 @@
 				.header-flex-left
 					.menu
 						display: none
-
-	.about-us-page
-		.about-us-content
-			.first-block
-				padding: 60px 0px 80px
-				.container
-					max-width: 720px
-
-	.news-page
-		.news-page-content
-			padding: 60px 0px 80px
-			.container
-				max-width: 720px
-				.news-list
-					.news-item
-						max-width: 300px
-
-	.legal-page-wrapper
-		.legal-page-content
-			.container
-				max-width: 720px
-				.special-link
-					padding: 20px
-					span
-						font-size: 18px
-						line-height: 24px
 
 	.copyright-block
 		.container
@@ -90,6 +67,34 @@
 					a
 						line-height: 40px
 
+	.about-us-page
+		.about-us-content
+			.first-block
+				padding: 60px 0px 80px
+				.container
+					max-width: 720px
+
+	.news-page
+		.news-page-content
+			padding: 60px 0px 80px
+			.main-container
+				.news-list
+					.news-item
+						max-width: 300px
+
+	.post-page
+		.post-page-content
+			padding: 60px 0px 80px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					padding: 20px
+					span
+						font-size: 18px
+						line-height: 24px
+
 @media screen and (max-width: 767px)
 	
 	h1
@@ -100,55 +105,40 @@
 		font-size: 28px
 		line-height: 36px
 
-	p
+	h6
+		font-size: 16px
 		line-height: 24px
+
+	p
+		font-size: 16px
+		line-height: 24px
+
+	.inner-page-wrapper
+		ul
+			> li
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+		ol
+			> li
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+		dl
+			dt
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+			dd
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
 
 	.action-btn
 		padding-bottom: 60px
 
-	.inner-page-wrapper
-		.red-intro-block
-			padding-bottom: 0px
-		.black-intro-block
-			padding: 0px
-			.container
-				p
-					font-size: 32px
-					line-height: 42px
-					padding: 40px 0px 0px
-
-	.about-us-page
-		.about-us-content
-			.first-block
-				padding: 40px 0px 60px
-				.container
-					max-width: 540px
-					
-	.news-page
-		.news-page-content
-			padding: 40px 0px 60px
-			.container
-				max-width: 540px
-				.news-list
-					.news-item
-						max-width: 100%
-						margin-bottom: 40px
-						padding-left: 10px
-						padding-right: 10px
-						margin-left: 0px
-						margin-right: 0px
-						.news-description
-							max-height: 115px
-
-	.legal-page-wrapper
-		.legal-page-content
-			.container
-				max-width: 540px
-				.special-link
-					span
-						padding-right: 15px
-			&.black-page-content
-				padding-bottom: 0px
+	.main-container
+		max-width: 540px
 
 	.footer
 		.container
@@ -172,44 +162,90 @@
 						&:nth-child(2)
 							padding: 0px
 
-	@media screen and (max-width: 700px)
-		
-		.about-us-page
-			.about-us-content
-				.first-block
-					.container
-						.flex-block
-							flex-direction: column
-
-	@media screen and (max-width: 576px)
-		
-		.header
-			height: 60px
-
-		.news-page
-			.news-page-content
-				.container
-					.news-list
-						.news-item
-							padding-left: 0px
-							padding-right: 0px
-							margin-bottom: 30px
-							.news-description
-								padding-top: 10px
-								max-height: 105px
-
-		.legal-page-wrapper
-			.legal-page-content
-				.container
-					.special-link
-						flex-direction: column
-						align-items: flex-start
-						span
-							padding: 0px 0px 15px 0px
-
-		.footer
+	.inner-page-wrapper
+		.red-intro-block
+			padding-bottom: 0px
+		.black-intro-block
+			padding: 0px
 			.container
-				.top-footer-block
-					.flex-left
-						h2
-							padding-bottom: 20px
+				p
+					font-size: 32px
+					line-height: 42px
+					padding: 40px 0px 0px
+
+	.about-us-page
+		.about-us-content
+			.first-block
+				padding: 40px 0px 60px
+				.container
+					max-width: 540px
+					
+	.news-page
+		.news-page-content
+			padding: 40px 0px 60px
+			.main-container
+				.news-list
+					.news-item
+						max-width: 100%
+						margin-bottom: 40px
+						padding-left: 10px
+						padding-right: 10px
+						margin-left: 0px
+						margin-right: 0px
+						.news-description
+							max-height: 115px
+
+	.post-page
+		.post-page-content
+			padding: 40px 0px 60px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					span
+						padding-right: 15px
+			&.black-page-content
+				padding-bottom: 0px
+
+@media screen and (max-width: 700px)
+		
+	.about-us-page
+		.about-us-content
+			.first-block
+				.container
+					.flex-block
+						flex-direction: column
+
+@media screen and (max-width: 576px)
+	
+	.header
+		height: 60px
+
+	.footer
+		.container
+			.top-footer-block
+				.flex-left
+					h2
+						padding-bottom: 20px
+
+	.news-page
+		.news-page-content
+			.main-container
+				.news-list
+					.news-item
+						padding-left: 0px
+						padding-right: 0px
+						margin-bottom: 30px
+						.news-description
+							padding-top: 10px
+							max-height: 105px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					flex-direction: column
+					align-items: flex-start
+					span
+						padding: 0px 0px 15px 0px
