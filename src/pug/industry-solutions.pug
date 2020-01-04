@@ -23,7 +23,7 @@ block main-content
 	.inner-page-wrapper.industry-solutions-page
 		.intro-block.red-intro-block
 			.container
-				h1.animated.fadeIn.delay-1s.slower Отраслевые решения
+				h1 Отраслевые решения
 				.scroll-menu
 					ul
 						li#first-trigger Маркетплейсы
@@ -109,12 +109,5 @@ block main-content
 									dd Наличие личного кабинета, упрощает процесс мониторинга за платежами, а также выдачу займа, как одному заемщику так и сотням сразу.
 									dt Для заемщика
 									dd Моментальное зачисление на банковскую карту, позволяет сразу же воспользоваться средствами для своих нужд, и осуществить его погашение, без просрочек и дополнительных комиссий.
-			.second-block
-				.container
-					.flex-block
-						.flex-left
-							img(src="./images/svg/api-cms.svg", alt="Image")
-						.flex-right
-							h4 Разработчикам
-							p Мы предоставляем универсальный платежный API и готовые модули для CMS-систем, которые позволят очень быстро и просто подключить оплату на сайте.
-							include includes/components/_developers-btn.pug
+			block developers-block
+				+developers

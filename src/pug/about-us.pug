@@ -27,91 +27,25 @@ block main-content
 		.about-us-content
 			.first-block
 				.container.main-container
-					.flex-block
-						.flex-left.animated.fadeInLeft.delay-1s.slow
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeInLeft(data-id='1')
 							p
 								b UAPAY - это национальный платежный сервис, предоставляющий финансово-технические решения для любого типа онлайн бизнеса. Наша команда професионалов поможет вам вам автоматизировать платежи и ускорить бизнес-процессы.
 							p Компания, основанная в 2013 году, предлагает выгодные тарифы и гарантию надежности. Мы заботимся о безопасности и скорости онлайн расчетов, поэтому стараемся применять новейшие технологии которые обеспечивают требуемый уровень проведения платежей.
 							p Высокий уровень сервиса, прозрачность и надежность транзакций, оперативная и квалифицированная работа службы поддержки, – все это позволило завоевать доверие наших клиентов и закрепить за собой имидж честной и стабильной компании.
-						.flex-right.animated.fadeInRight.delay-1s.slow
+						.flex-right.animated.fadeInRight(data-id='1')
 							img(src="./images/svg/uapay.svg", alt="Image", style="width: 340px")
-			.second-block
-				.container.main-container
-					.flex-block
-						.flex-item.animated.fadeIn.delay-3s.slow
-							figure
-								img(src="./images/about-us/pci-dss.png", alt="Image")
-							p.title PCI DSS Level 1
-							p.desc 100% відповідність стандартам безпеки платежів
-						.flex-item.animated.fadeIn.delay-3-and-half-s.slow
-							figure
-								img(src="./images/about-us/gdpr.png", alt="Image")
-							p.title GDPR Compliant
-							p.desc Робота з персональними даними чітко регламентована
-						.flex-item.animated.fadeIn.delay-4s.slow
-							figure
-								img(src="./images/about-us/ukraine.png", alt="Image")
-							p.title ВПС
-							p.desc Статус внутрішньодержавної платіжної системи
-						.flex-item.animated.fadeIn.delay-4-and-half-s.slow
-							figure
-								img(src="./images/about-us/paperless.png", alt="Image")
-							p.title Paperless
-							p.desc Максимальна підтримка електронного документообігу
-						.flex-item.animated.fadeIn.delay-5s.slow
-							figure
-								img(src="./images/about-us/structure.png", alt="Image")
-							p.title ОПІ
-							p.desc Ліцензія оператора платіжної інфраструктури
-						.flex-item.animated.fadeIn.delay-5-and-half-s.slow
-							figure
-								img(src="./images/about-us/licence.png", alt="Image")
-							p.title Ліцензія НБУ
-							p.desc Переказ коштів у національній валюті, без без відкриття рахунків
-			.third-block
-				.container.main-container
-					h4.animated.fadeIn.delay-5-and-half-s.slow Нам довіряють
-					.flex-block
-						.flex-item.animated.fadeIn.delay-6s.slow
-							include includes/svg/about-us/_1.pug
-						.flex-item.animated.fadeIn.delay-6-and-half-s.slow
-							include includes/svg/about-us/_2.pug
-						.flex-item.animated.fadeIn.delay-7s.slow
-							include includes/svg/about-us/_3.pug
-						.flex-item.animated.fadeIn.delay-7-and-half-s.slow
-							include includes/svg/about-us/_4.pug
-						.flex-item.animated.fadeIn.delay-8s.slow
-							include includes/svg/about-us/_5.pug
-						.flex-item.animated.fadeIn.delay-8-and-half-s.slow
-							include includes/svg/about-us/_6.pug
-						.flex-item.animated.fadeIn.delay-9s.slow
-							include includes/svg/about-us/_7.pug
-						.flex-item.animated.fadeIn.delay-9-and-half-s.slow
-							include includes/svg/about-us/_8.pug
-						.flex-item.animated.fadeIn.delay-10s.slow
-							include includes/svg/about-us/_14.pug
-						.flex-item.animated.fadeIn.delay-10-and-half-s.slow
-							include includes/svg/about-us/_10.pug
-						.flex-item.animated.fadeIn.delay-11s.slow
-							include includes/svg/about-us/_9.pug
-						.flex-item.animated.fadeIn.delay-11-and-half-s.slow
-							include includes/svg/about-us/_13.pug
-						.flex-item.animated.fadeIn.delay-12s.slow
-							include includes/svg/about-us/_12.pug
-						.flex-item.animated.fadeIn.delay-12-and-half-s.slow
-							include includes/svg/about-us/_11.pug
-			.fourth-block
-				.container.main-container
-					.flex-block
-						.flex-left.animated.fadeInLeft.delay-13s.slow
-							img(src="./images/svg/percent.svg", alt="Image")
-						.flex-right.animated.fadeInRight.delay-13s.slow
-							h4 Партнерам
-							p Ми завжди відкриті до співпраці з новими партнерами і до надання якісного сервісу широкому спектру клієнтів. Тому для всіх, хто пов'язаний з онлайн-бізнесом, наша партнерська програма дає можливість заробляти на рекомендаціях і підключених клієнтах.
-							include includes/components/_partnership-btn.pug
-					h5.animated.fadeIn.delay-13-and-half-s.slow Про нас пишуть
-					.media-block
-						img(class="animated fadeIn delay-14s slow", src="./images/about-us/media/ain.png", alt="Logo")
-						img(class="animated fadeIn delay-14-and-half-s slow", src="./images/about-us/media/minfin.png", alt="Logo")
-						img(class="animated fadeIn delay-15s slow", src="./images/about-us/media/mind.png", alt="Logo")
-						img(class="animated fadeIn delay-15-and-half-s slow", src="./images/about-us/media/interfax.png", alt="Logo")
+			block preferences-block
+				+preferences('black-background')
+			block trust-block
+				+trust
+			block partners-block
+				+partners
+			.last-block
+				.container.main-container.animatedParent.animateOnce(data-sequence='500')
+					h5.animated.fadeIn(data-id='1') Про нас пишуть
+					.media-block.animatedParent.animateOnce(data-sequence='500')
+						img(class="animated fadeIn", data-id='1', src="./images/about-us/media/ain.png", alt="Logo")
+						img(class="animated fadeIn", data-id='2', src="./images/about-us/media/minfin.png", alt="Logo")
+						img(class="animated fadeIn", data-id='3', src="./images/about-us/media/mind.png", alt="Logo")
+						img(class="animated fadeIn", data-id='4', src="./images/about-us/media/interfax.png", alt="Logo")

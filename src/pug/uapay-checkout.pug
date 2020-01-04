@@ -27,57 +27,57 @@ block main-content
 		.uapay-checkout-content
 			.first-block
 				.container
-					.flex-block
-						.flex-left
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeInLeft(data-id='1')
 							p UAPAY Checkout добавляет вашему онлайн бизнесу дополнительную ценность благодаря комплексу решений, направленных на автоматизацию платежей за товары и услуги с помощью банковских карт, а также их логистики вашим покупателям, по Украине.
 							p В основе UAPAY Checkout лежат сложные технологические и бизнес процессы, которые построены на простых принципах прозрачности, безопасности и простоты пользования, как для вас, так и для ваших покупателей.
 							p Мы поддерживаем работу c банковскими картами международных платежных систем Visa и MasterCard, а также Национальной платежной системой ПРОСТІР.
 							include includes/components/_developers-btn.pug
-						.flex-right
+						.flex-right.animated.fadeInRight(data-id='1')
 							img(src="./images/svg/checkout.svg", alt="Image")
 			.second-block
-				.container
-					h4 Возможности
+				.container.animatedParent.animateOnce(data-sequence='500')
+					h4.animated.fadeIn(data-id='1') Возможности
 					.flex-block
-						.flex-left
-							.flex-item
+						.flex-left.animatedParent.animateOnce(data-sequence='500')
+							.flex-item.animated.fadeInLeft(data-id='1')
 								img(src="./images/uapay-checkout/safe.png", alt="Image")
 								h3 Защита от мошеннических платежей
 								p Система обеспечивает безопасность платежей и защиту от мошеннических действий. Наша система использует уникальные алгоритмы которые позволяют выявить сомнительность транзакции и не позволяют им пройти. Алгоритмы и правила постоянно улучшаются, позволяя держать уровень безопасности на должном уровне, не ухудшая конверсию платежей.
-							.flex-item
+							.flex-item.animated.fadeInLeft(data-id='2')
 								img(src="./images/uapay-checkout/qr.png", alt="Image")
 								h3 QR платежи
 								p Возможность генерирования платежных QR кодов, позволяет расширить точки приема платежей за рамками интернета, для тех кто в этом нуждается. В платежный QR можно заложить сразу реквизиты получателя платежа, готовую сумму к оплате или дать возможность плательщику внести желаемую сумму к оплате. Идеально подходит для заведений, организаторам мероприятий, и магазинам с физическими точками продаж. Не требует интеграции.
-							.flex-item
+							.flex-item.animated.fadeInLeft(data-id='3')
 								img(src="./images/uapay-checkout/paperless.png", alt="Image")
 								h3 Электронный документооборот
 								p Договора, акты, дополнительные соглашения и иные документы можно подписывать с применением квалифицированной электронной подписи (КЕП). Это существенно сокращает время подписания стандартного договора и исключает любые дополнительные расходы на бумагу, чернила и логистику бумажных экземпляров.  А главное, КЕП имеет полную юридическую силу и повышенную безопасность.
-							.flex-item
+							.flex-item.animated.fadeInLeft(data-id='4')
 								img(src="./images/uapay-checkout/delivery.png", alt="Image")
 								h3 Службы доставки
 								p Готовые интеграции со службами доставки (Новая Почта, JustIn и другие) - избавляют от необходимости отдельной интеграции API службы доставки, чтобы обмениваться статусом доставки онлайн. Мы это уже сделали за вас. Так же, покупатель сразу может оплатить и товар и его доставку, а мы распределим финансовые потоки.
-						.flex-right
-							.flex-item
+						.flex-right.animatedParent.animateOnce(data-sequence='500')
+							.flex-item.animated.fadeInRight(data-id='1')
 								img(src="./images/uapay-checkout/subscription.png", alt="Image")
 								h3 Платежи по подписке
 								p Регулярные или рекуррентные платежи, позволяют осуществлять платежи в указанный, плательщиком, период. Система автоматически будет списывать указанную сумму с банковской карты, и после каждой успешной операции, плательщик получит уведомление о платеже, с чеком об оплате цифровой подписью.
-							.flex-item
+							.flex-item.animated.fadeInRight(data-id='2')
 								img(src="./images/uapay-checkout/escrow.png", alt="Image")
 								h3 Эскроу-платежи
 								p Теперь, обе стороны сделки защищены, от мошенничества благодаря эскроу-платежам. Технология, гарантирует успешность операции при выполнении всех условий сделки с обеих сторон. Покупатель уверен в возврате средств, при не успешности сделки, а продавец - в получении средств при успешности сделки. 
-							.flex-item
+							.flex-item.animated.fadeInRight(data-id='3')
 								img(src="./images/uapay-checkout/cart.png", alt="Image")
 								h3 Мультикорзина
 								p Идеальное решение для маркетплейсов и других платформ, которые нуждаются в автоматическом расчете сразу с несколькими поставщиками товаров и услуг. Перечисление средств осуществляется на следующий день, по указанным реквизитам получателей, в личном кабинете или по API. Если реквизиты указаны неверно или некорректно, мы уведомим Вас об этом моментально.
-							.flex-item
+							.flex-item.animated.fadeInRight(data-id='4')
 								img(src="./images/uapay-checkout/comfort.png", alt="Image")
 								h3 Комфортное подключение
 								p Мы понимаем как важно оперативно подключить систему платежей, и для этого разработали максимально доступный API и готовые платежные CMS модули, которые можно установить и активировать. Но кто как не мы, лучше знаем нашу систему, поэтому мы пошли дальше, реализовав услугу "Интегрируй за меня". Теперь вам не придется тратить время на изучение технической документации, наша команда сделает все за вас.
 			.third-block
-				.container
-					h4 Тарифы
-					.flex-block
-						.flex-left
+				.container.animatedParent.animateOnce(data-sequence='500')
+					h4.animated.fadeIn(data-id='1') Тарифы
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeInLeft(data-id='1')
 							h2 Быстрый старт
 							p Идеально подходит для тех, кто хочет подключить оплату онлайн, без лишних действий и траты времени
 							.bonus
@@ -91,7 +91,7 @@ block main-content
 								li API, CMS
 								li "Интегрируй за меня"
 							a.btn-white(href="javascript:void(0);") Подключиться сейчас
-						.flex-right
+						.flex-right.animated.fadeInRight(data-id='1')
 							h2 Enterprise
 							p Решения для крупных компаний, с уникальными бизнес моделями
 							ul
@@ -101,12 +101,5 @@ block main-content
 								li Выделенный аккаунт менеджер
 								li Техническая поддержка онлайн
 							a.btn-ghost-white(href="javascript:void(0);") Связаться с менеджером
-			.fourth-block
-				.container
-					.flex-block
-						.flex-left
-							img(src="./images/svg/api-cms.svg", alt="Image")
-						.flex-right
-							h4 Разработчикам
-							p Мы предоставляем универсальный платежный API и готовые модули для CMS-систем, которые позволят очень быстро и просто подключить оплату на сайте.
-							include includes/components/_developers-btn.pug
+			block developers-block
+				+developers

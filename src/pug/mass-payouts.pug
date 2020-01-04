@@ -27,24 +27,25 @@ block main-content
 		.mass-payouts-content
 			.first-block
 				.container
-					p.intro-text
-						b Разработан для тех, кому нужно выплачивать вознаграждение или выдавать займы на банковские карты любому количеству получателей. Все выплаты происходят в режиме онлайн.
+					.animatedParent.animateOnce
+						p.intro-text.animated.growIn
+							b Разработан для тех, кому нужно выплачивать вознаграждение или выдавать займы на банковские карты любому количеству получателей. Все выплаты происходят в режиме онлайн.
 					.flex-block
-						.flex-item
-							figure
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
 								img(src="./images/mass-payouts/settings.png", alt="Image")
-							h5 Автоматизация
-							p Загружайте готовый файл в вашем кабинете или делайте выплаты использую наше API
-						.flex-item
-							figure
+							h5.animated.fadeIn Автоматизация
+							p.animated.fadeIn Загружайте готовый файл в вашем кабинете или делайте выплаты использую наше API
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
 								img(src="./images/mass-payouts/profile.png", alt="Image")
-							h5 Личный кабинет
-							p Смотрите в режиме онлайн историю платежей, данные получателя, состояние счета, а также статусы по каждой операции
-						.flex-item
-							figure
+							h5.animated.fadeIn Личный кабинет
+							p.animated.fadeIn Смотрите в режиме онлайн историю платежей, данные получателя, состояние счета, а также статусы по каждой операции
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
 								img(src="./images/mass-payouts/prices.png", alt="Image")
-							h5 Гибкие тарифы
-							p Предлагаем уникальные тарифы которые будут комфортными для вашей бизнес модели
+							h5.animated.fadeIn Гибкие тарифы
+							p.animated.fadeIn Предлагаем уникальные тарифы которые будут комфортными для вашей бизнес модели
 					h4.text-center Идеально подходит
 					.preferences-block
 						.preference-col
@@ -80,12 +81,5 @@ block main-content
 						li Электронный документооборот
 						li Оперативное зачисление
 						li Выделенный аккаунт менеджер
-			.third-block
-				.container
-					.flex-block
-						.flex-left
-							img(src="./images/svg/api-cms.svg", alt="Image")
-						.flex-right
-							h4 Разработчикам
-							p Мы предоставляем универсальный платежный API и готовые модули для CMS-систем, которые позволят очень быстро и просто подключить оплату на сайте.
-							include includes/components/_developers-btn.pug
+			block developers-block
+				+developers
