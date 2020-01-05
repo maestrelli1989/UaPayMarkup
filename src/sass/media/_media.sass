@@ -30,6 +30,14 @@
 					.news-item
 						max-width: 270px
 
+	.footer
+		.container
+			.bottom-footer-block
+				.pre-menu-block
+					.pre-menu-col
+						&:last-child
+							text-align: right
+
 @media screen and (max-width: 992px)
 
 	h1
@@ -46,6 +54,9 @@
 				.header-flex-left
 					.menu
 						display: none
+
+	.burger
+		display: block
 
 	.copyright-block
 		.container
@@ -139,11 +150,39 @@
 	.main-container
 		max-width: 540px
 
+	.header
+		.container
+			.header-flex
+				.header-flex-right
+					.feedback-link
+						display: none
+					.btn-ghost-white
+						display: none
+
 	.footer
 		.container
 			.top-footer-block
 				padding-top: 0px
 				background-position: center right
+			.bottom-footer-block
+				.footer-menu
+					display: none
+				.footer-menu-mobile
+					display: block
+				.pre-menu-block
+					.pre-menu-col
+						&:first-child
+							order: 1
+							flex: 0 0 50%
+							max-width: 50%
+						&:nth-child(2)
+							order: 3
+						&:last-child
+							order: 2
+							flex: 0 0 50%
+							max-width: 50%
+						.address
+							padding-top: 12px
 
 	.copyright-block
 		.container
