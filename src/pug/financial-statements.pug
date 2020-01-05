@@ -19,13 +19,16 @@ block meta-data
 block header
 	+header('black-header')
 
+block mobile-menu
+	+mobile-menu('mobile-menu-black')
+
 block main-content
 	.inner-page-wrapper.financial-report-page
 		.intro-block.black-intro-block
 			.container
 				p Фінансова звітність
 		.financial-report-content
-			.container
+			.container.main-container
 				h5 Фінансова звітність 2018
 				a.financial-report-link(href="javascript:void(0);", target="_blank")
 					img(src="./images/download.png", alt="Image")
@@ -66,7 +69,7 @@ block main-content
 					img(src="./images/download.png", alt="Image")
 					span Звіт незалежного аудитора
 				hr
-				h5 Фінансова звітність 201
+				h5 Фінансова звітність 2016
 				a.financial-report-link(href="javascript:void(0);", target="_blank")
 					img(src="./images/download.png", alt="Image")
 					span Звіт про власний капітал
