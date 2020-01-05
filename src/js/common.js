@@ -38,6 +38,11 @@ $(() => {
 	const fifthTrigger = $("#fifth-trigger");
 	const fifthBlock = $("#fifth-block");
 
+	const hamburger = $(".burger");
+	const mobileMenu = $(".mobile-menu");
+	const hideMobileMenu = $(".hide-menu");
+	const mobileMenuActive = $(".mobile-menu-active");
+
 	/*
 		Toggle effect at the Header sub menu
 	*/
@@ -126,6 +131,14 @@ $(() => {
 		$(primaryTags).animate({
 			scrollTop: $(fifthBlock).offset().top
 		}, 700);
+	});
+
+	/*
+		Display mobile menu
+	*/
+
+	$(hamburger).click(() => {
+		$(".mobile-menu").toggleClass("mobile-menu-active");
 	});
 
 });

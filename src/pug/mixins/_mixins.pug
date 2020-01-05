@@ -19,7 +19,7 @@ mixin meta-data(title, description, href)
 mixin header(className)
 	header.header(class=className)
 		.container.animatedParent.animateOnce(data-sequence='500')
-			.header-flex.animated.fadeInDown(data-id='1')
+			.header-flex.animated.fadeIn(data-id='1')
 				.header-flex-left
 					a(href="/", class="site-logo-link")
 						img(src="./images/logo/site-logo.png", alt="Logo")
@@ -64,6 +64,80 @@ mixin header(className)
 					.burger
 						.burger-box
 							.burger-inner
+
+//- Mobile menu mixin
+
+mixin mobile-menu(className)
+	.mobile-menu(class=className)
+		.mobile-menu-row
+			.mobile-menu-col
+				.mobile-menu-trigger Бізнесу
+				a(class="mobile-menu-link", href="uapay-checkout") UAPAY Checkout
+				a(class="mobile-menu-link", href="mass-payouts") Масові платежі
+				a(class="mobile-menu-link", href="industry-solutions") Галузеві рішення
+			.mobile-menu-col
+				.mobile-menu-trigger Користувачу
+				a(class="mobile-menu-link", href="javascript:void(0);") Штрафи UAPAY
+				a(class="mobile-menu-link", href="javascript:void(0);") Оплата послуг
+				a(class="mobile-menu-link", href="javascript:void(0);") Грошові перекази 
+				a(class="mobile-menu-link", href="javascript:void(0);") Безпечна угода
+			.mobile-menu-col
+				.mobile-menu-trigger Розробникам
+				a(class="mobile-menu-link", href="javascript:void(0);") API
+				a(class="mobile-menu-link", href="javascript:void(0);") Модулі CMS
+			.mobile-menu-col
+				.mobile-menu-trigger Компанія
+				a(class="mobile-menu-link", href="about-us") Про нас
+				a(class="mobile-menu-link", href="news") Новини
+				a(class="mobile-menu-link", href="javascript:void(0);") FAQ
+				a(class="mobile-menu-link", href="javascript:void(0);") Партнерство
+				a(class="mobile-menu-link", href="legal-info") Правова інформація
+		.accordion-wrapper
+			.accordion#mobile-menu-accordion
+				.mobile-menu-accordion-item
+					#mobile-menu-heading1
+						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse1", aria-expanded="false", aria-controls="mobile-menu-collapse1")
+							span Бізнесу
+							i.fas
+					.collapse#mobile-menu-collapse1(aria-labelledby="mobile-menu-heading1", data-parent="#mobile-menu-accordion")
+						ul.links-wrapper
+							li: a(href="uapay-checkout") UAPAY Checkout
+							li: a(href="mass-payouts") Масові платежі
+							li: a(href="industry-solutions") Галузеві рішення
+				.mobile-menu-accordion-item
+					#mobile-menu-heading2
+						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse2", aria-expanded="false", aria-controls="mobile-menu-collapse2")
+							span Користувачу
+							i.fas
+					.collapse#mobile-menu-collapse2(aria-labelledby="mobile-menu-heading2", data-parent="#mobile-menu-accordion")
+						ul.links-wrapper
+							li: a(href="javascript:void(0);") Штрафи UAPAY
+							li: a(href="javascript:void(0);") Оплата послуг
+							li: a(href="javascript:void(0);") Грошові перекази
+							li: a(href="javascript:void(0);") Безпечна угода
+				.mobile-menu-accordion-item
+					#mobile-menu-heading3
+						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse3", aria-expanded="false", aria-controls="mobile-menu-collapse3")
+							span Розробникам
+							i.fas
+					.collapse#mobile-menu-collapse3(aria-labelledby="mobile-menu-heading3", data-parent="#mobile-menu-accordion")
+						ul.links-wrapper
+							li: a(href="javascript:void(0);") API
+							li: a(href="javascript:void(0);") Модулі CMS
+				.mobile-menu-accordion-item
+					#mobile-menu-heading4
+						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse4", aria-expanded="false", aria-controls="mobile-menu-collapse4")
+							span Компанія
+							i.fas
+					.collapse#mobile-menu-collapse4(aria-labelledby="mobile-menu-heading4", data-parent="#mobile-menu-accordion")
+						ul.links-wrapper
+							li: a(href="about-us") Про нас
+							li: a(href="news") Новини
+							li: a(href="javascript:void(0);") FAQ
+							li: a(href="javascript:void(0);") Партнерство
+							li: a(href="legal-info") Правова інформація
+			a.btn-ghost-white(href="javascript:void(0);") Особистий кабінет
+			a.feedback-link(href="javascript:void(0);") Зворотний зв'язок
 
 //- Preferences block mixin
 
