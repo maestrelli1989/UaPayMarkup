@@ -74,8 +74,8 @@ html(lang='uk')
 							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='5') Партнерство
 							a(href="legal-info", class="footer-menu-link animated fadeIn", data-id='6') Правова інформація
 					.footer-menu-mobile
-						.accordion#mobile-footer-accordion
-							.mobile-footer-accordion-item
+						.accordion.animatedParent.animateOnce(data-sequence='200')#mobile-footer-accordion
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='1')
 								#mobile-footer-heading1
 									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse1", aria-expanded="false", aria-controls="mobile-footer-collapse1")
 										span Бізнесу
@@ -85,7 +85,7 @@ html(lang='uk')
 										li: a(href="uapay-checkout") UAPAY Checkout
 										li: a(href="mass-payouts") Масові платежі
 										li: a(href="industry-solutions") Галузеві рішення
-							.mobile-footer-accordion-item
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='2')
 								#mobile-footer-heading2
 									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse2", aria-expanded="false", aria-controls="mobile-footer-collapse2")
 										span Користувачу
@@ -96,7 +96,7 @@ html(lang='uk')
 										li: a(href="javascript:void(0);") Оплата послуг
 										li: a(href="javascript:void(0);") Грошові перекази 
 										li: a(href="javascript:void(0);") Безпечна угода
-							.mobile-footer-accordion-item
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='3')
 								#mobile-footer-heading3
 									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse3", aria-expanded="false", aria-controls="mobile-footer-collapse3")
 										span Розробникам
@@ -105,7 +105,7 @@ html(lang='uk')
 									ul.links-wrapper
 										li: a(href="javascript:void(0);") API
 										li: a(href="javascript:void(0);") Модулі CMS
-							.mobile-footer-accordion-item
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='4')
 								#mobile-footer-heading4
 									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse4", aria-expanded="false", aria-controls="mobile-footer-collapse4")
 										span Компанія
