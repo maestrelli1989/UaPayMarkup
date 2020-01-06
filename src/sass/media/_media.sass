@@ -237,34 +237,55 @@
 					line-height: 42px
 					padding: 40px 0px 0px
 
+	.preferences-block
+		padding: 60px 0px
+		.main-container
+			.flex-block
+				justify-content: center
+				.flex-item
+					padding-bottom: 40px
+					&:last-child
+						padding-bottom: 0px
+	.trust-block
+		padding: 30px 0px 20px
+		.main-container
+			.flex-block
+				.flex-item
+					margin-bottom: 20px
+
+	.partners-block
+		padding: 40px 0px 20px
+		.main-container
+			.flex-block
+				flex-direction: column
+				.flex-left
+					order: 2
+					max-width: 100%
+					text-align: center
+				.flex-right
+					order: 1
+					max-width: 100%
+
 	.about-us-page
 		.about-us-content
 			.first-block
-				padding: 40px 0px 60px
-				.main-container
-					.flex-block
-						flex-direction: column
-			.second-block
-				padding: 60px 0px
-				.main-container
-					.flex-block
-						justify-content: center
-						.flex-item
-							padding-bottom: 40px
-							&:last-child
-								padding-bottom: 0px
-			.third-block
 				padding: 40px 0px 20px
-			.fourth-block
-				padding: 40px 0px 60px
 				.main-container
 					.flex-block
 						flex-direction: column
 						.flex-left
-							order: 2
+							max-width: 100%
 						.flex-right
-							order: 1
-					
+							max-width: 100%
+							text-align: center
+			.last-block
+				padding: 0px 0px 60px
+				.main-container
+					.media-block
+						padding-top: 30px
+						justify-content: center
+						img
+							margin: 0px 15px 15px
 	.news-page
 		.news-page-content
 			padding: 40px 0px 60px
@@ -319,6 +340,26 @@
 				.flex-left
 					h2
 						padding-bottom: 20px
+
+	.trust-block
+		.main-container
+			.flex-block
+				justify-content: space-around
+				.flex-item
+					max-width: 120px
+					height: auto
+
+	.abous-us-page
+		.about-us-page-content
+			.last-block
+				.main-container
+					.media-block
+						padding: 30px 0px 0px
+						flex-direction: column
+						img
+							margin-bottom: 30px
+							&:last-child
+								margin-bottom: 0px
 
 	.news-page
 		.news-page-content

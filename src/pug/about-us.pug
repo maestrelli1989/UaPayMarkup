@@ -19,6 +19,9 @@ block meta-data
 block header
 	+header('red-header')
 
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
 block main-content
 	.inner-page-wrapper.about-us-page
 		.intro-block.red-intro-block
@@ -28,12 +31,12 @@ block main-content
 			.first-block
 				.container.main-container
 					.flex-block.animatedParent.animateOnce(data-sequence='500')
-						.flex-left.animated.fadeInLeft(data-id='1')
+						.flex-left.animated.fadeIn(data-id='1')
 							p
 								b UAPAY - это национальный платежный сервис, предоставляющий финансово-технические решения для любого типа онлайн бизнеса. Наша команда професионалов поможет вам вам автоматизировать платежи и ускорить бизнес-процессы.
 							p Компания, основанная в 2013 году, предлагает выгодные тарифы и гарантию надежности. Мы заботимся о безопасности и скорости онлайн расчетов, поэтому стараемся применять новейшие технологии которые обеспечивают требуемый уровень проведения платежей.
 							p Высокий уровень сервиса, прозрачность и надежность транзакций, оперативная и квалифицированная работа службы поддержки, – все это позволило завоевать доверие наших клиентов и закрепить за собой имидж честной и стабильной компании.
-						.flex-right.animated.fadeInRight(data-id='1')
+						.flex-right.animated.fadeIn(data-id='2')
 							img(src="./images/svg/uapay.svg", alt="Image", style="width: 340px")
 			block preferences-block
 				+preferences('black-background')
