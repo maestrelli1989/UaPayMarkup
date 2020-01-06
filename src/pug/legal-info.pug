@@ -11,9 +11,9 @@ extends layouts/_layout.pug
 
 block meta-data
 	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/'
+	'Правова інформація — UAPAY', 
+	'Тут ви знайдете всю необхідну правову інформацію про компанію UAPAY.', 
+	'https://uapay.ua/legal-info'
 	)
 
 block header
@@ -36,13 +36,16 @@ block main-content
 					span Умови надання переказів
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="info-uapay", data-id='3')
-					span Інформація про фінансову установу. ТОВ «ФК ЮАПЕЙ»
+					span Інформація про фінансову установу. ТОВ 
+						q ФК ЮАПЕЙ
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="financial-statements", data-id='4')
-					span Фінансова звітність. ТОВ «ФК ЮАПЕЙ»
+					span Фінансова звітність. ТОВ 
+						q ФК ЮАПЕЙ
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="info-aihama", data-id='5')
-					span Інформація про фінансову установу. ТОВ «АЙГАМА»
+					span Інформація про фінансову установу. ТОВ 
+						q АЙГАМА
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="privacy-policy", data-id='6')
 					span EU / EEA Політика конфіденційності
