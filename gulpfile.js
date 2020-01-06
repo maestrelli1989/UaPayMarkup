@@ -18,7 +18,7 @@ gulp.task('browser-sync', () => {
 
 gulp.task('pug', () => {
 	return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
-		.pipe(pug({pretty: '\t'}))
+		.pipe(pug({pretty: false}))
 		.on("error", notify.onError())
 		.pipe(gulp.dest('app'));
 });
