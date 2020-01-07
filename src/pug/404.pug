@@ -1,5 +1,5 @@
 //-
-	Home page markup for the UaPay website project
+	Error 404 page markup for the UaPay website project
 	Version: 1.0
 	Created: 10.12.2019
 	Author: Serhii Tiutin
@@ -13,7 +13,7 @@ block meta-data
 	+meta-data(
 	'Website title', 
 	'Website description', 
-	'https://uapay.ua/'
+	'https://uapay.ua/404'
 	)
 
 block header
@@ -23,7 +23,6 @@ block mobile-menu
 	+mobile-menu('mobile-menu-red')
 
 block main-content
-	+trust
-	+partners('extra-padding')
-	+preferences('red-background')
-	+developers('black-background')
+	h1.text-center 404
+	p Страница, на которую вы хотели перейти, не найдена.
+	p Возможно, введен некорректный адрес или страница была удалена...
